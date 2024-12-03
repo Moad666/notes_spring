@@ -1,0 +1,9 @@
+package com.example.demo.service;
+
+import com.warrenstrange.googleauth.GoogleAuthenticator;
+
+public class TotpService {
+	
+	private final GoogleAuthenticator gAuth;
+
+}

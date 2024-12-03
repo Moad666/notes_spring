@@ -1,0 +1,22 @@
+package com.example.demo.service;
+
+import com.warrenstrange.googleauth.GoogleAuthenticator;
+import com.warrenstrange.googleauth.GoogleAuthenticatorKey;
+
+public class TotpService {
+	
+	private final GoogleAuthenticator gAuth;
+	
+	public TotpService(GoogleAuthenticator gAuth) {
+		this.gAuth = gAuth;
+	}
+	
+	public GoogleAuthenticatorKey generateSecret() {
+		return gAuth.createCredentials();
+	}
+	
+	public String getQrCodeUrl(GoogleAuthenticatorKey secret, String username) {
+		
+	}
+
+}
